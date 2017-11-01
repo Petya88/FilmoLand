@@ -5,4 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="films">Фильмы</string>
+    <string name="serials">Сериалы</string>
+    <string name="anime">Аниме</string>
 </resources>

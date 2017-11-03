@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/movieBackgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/poster"
+        android:scaleType="centerCrop"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/transparentBlack"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/movieTitleTextView"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                app:cardCornerRadius="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/movieImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/poster"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="post" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:id="@+id/scoreLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    style="@style/headerFields"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/scoreCaptionTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Score:"
+                        style="@style/LightTextCaption"
+                        />
+
+                    <TextView
+                        android:id="@+id/scoreTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="123"
+                        style="@style/LightBoldText"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ratingLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    style="@style/headerFields"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/ratingCaptionTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Rating:"
+                        style="@style/LightTextCaption"
+                        />
+
+                    <TextView
+                        android:id="@+id/ratingTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="10+"
+                        style="@style/LightBoldText"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/releaseDateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    style="@style/headerFields"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/releaseDateCaptionTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Release Date:"
+                        style="@style/LightTextCaption"
+                        />
+
+                    <TextView
+                        android:id="@+id/releaseDateTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="10.10.2017"
+                        style="@style/LightBoldText"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/movieTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:text="Film "
+            style="@style/LightBoldText"
+            android:gravity="center"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/movieTitleTextView">
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryTransparent"
+
+                />
+
+            <TextView
+                android:id="@+id/movieDescriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                style="@style/LightTextCaption"
+                android:text="Bla  bla  aaaaaab   blaaa  /n blaaaaa  "
+                />
+
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryTransparent"
+
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

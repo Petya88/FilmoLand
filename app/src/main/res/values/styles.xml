@@ -17,4 +17,30 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="LightText">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="LightTextCaption" parent="LightText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="LightBoldText" parent="LightText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="headerFields">
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="LightBoldCaption" parent="LightBoldText">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="LightBoldDescription" parent="LightBoldText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
 </resources>

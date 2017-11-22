@@ -73,7 +73,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Score:"
+                        android:text="@string/score"
                         style="@style/LightTextCaption"
                         />
 
@@ -101,7 +101,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Rating:"
+                        android:text="@string/rating"
                         style="@style/LightTextCaption"
                         />
 
@@ -129,7 +129,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Release Date:"
+                        android:text="@string/release_date"
                         style="@style/LightTextCaption"
                         />
 

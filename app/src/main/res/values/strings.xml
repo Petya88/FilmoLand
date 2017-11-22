@@ -4,4 +4,7 @@
     <string name="no_internet_connection">Нет связи с интернетом</string>
     <string name="latest_movies">ЛУЧШИЕ ФИЛЬМЫ</string>
     <string name="back">НАЗАД</string>
+    <string name="rating">Голоса:</string>
+    <string name="release_date">Дата выхода:</string>
+    <string name="score">Рейтинг:</string>
 </resources>
